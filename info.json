@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "d1c55c15cdc372d81256e9389ac550ee3237e764",
+    "author": "Michal Bojanowski <michal2992@gmail.com>",
+    "time": "2021-06-10 21:41:24",
+    "files": 1,
+    "merge": false,
+    "message": "Fix 'cannotDisseminateFormat' test\n\nThe request URL started failing with a different error code. New request\nworks OK. So I have uncommented the test.\n"
+  },
+  "remote": "https://github.com/ropensci/oai",
+  "pkg": "oai"
+}

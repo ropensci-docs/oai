@@ -1,0 +1,10 @@
+pandoc: '2.5'
+pkgdown: 1.6.1
+pkgdown_sha: ~
+articles:
+  oai: oai.html
+last_built: 2021-07-22T11:10Z
+urls:
+  reference: https://docs.ropensci.org/oai/reference
+  article: https://docs.ropensci.org/oai/articles
+
