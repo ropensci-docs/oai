@@ -1,0 +1,9 @@
+pandoc: 3.8.3
+pkgdown: 2.2.1
+pkgdown_sha: ~
+articles:
+  oai: oai.html
+last_built: 2026-08-30T07:51Z
+urls:
+  reference: https://docs.ropensci.org/oai/reference
+  article: https://docs.ropensci.org/oai/articles

@@ -1,0 +1,13 @@
+{
+  "commit": {
+    "commit": "866af429d8cd4a97735c0efa1285fdde6cccf950",
+    "author": "Michal Bojanowski <michal2992@gmail.com>",
+    "time": "2022-11-10T16:46:58Z",
+    "files": 1,
+    "merge": false,
+    "message": "Bump version to 0.4.1\n"
+  },
+  "repo": "https://github.com/ropensci/oai",
+  "pkg": "oai",
+  "time": "2026-08-30T07:51:25Z"
+}

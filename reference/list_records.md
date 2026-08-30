@@ -1,0 +1,82 @@
+# List records
+
+List records
+
+## Usage
+
+``` r
+list_records(
+  url = "http://api.gbif.org/v1/oai-pmh/registry",
+  prefix = "oai_dc",
+  from = NULL,
+  until = NULL,
+  set = NULL,
+  token = NULL,
+  as = "df",
+  ...
+)
+```
+
+## Arguments
+
+- url:
+
+  (character) OAI-PMH base url. Defaults to the URL for arXiv's OAI-PMH
+  server (http://export.arxiv.org/oai2) or GBIF's OAI-PMH server
+  (http://api.gbif.org/v1/oai-pmh/registry)
+
+- prefix:
+
+  specifies the metadata format that the records will be returned in.
+  Default: `oai_dc`
+
+- from:
+
+  specifies that records returned must have been created/update/deleted
+  on or after this date.
+
+- until:
+
+  specifies that records returned must have been created/update/deleted
+  on or before this date.
+
+- set:
+
+  specifies the set that returned records must belong to.
+
+- token:
+
+  (character) a token previously provided by the server to resume a
+  request where it last left off. 50 is max number of records returned.
+  We will loop for you internally to get all the records you asked for.
+
+- as:
+
+  (character) What to return. One of "df" (for data.frame; default),
+  "list", or "raw" (raw text)
+
+- ...:
+
+  Curl options passed on to
+  [`GET`](https://httr.r-lib.org/reference/GET.html)
+
+## Examples
+
+``` r
+if (FALSE) { # \dontrun{
+# By default you get back a single data.frame
+list_records(from = '2018-05-01T00:00:00Z', until = '2018-05-03T00:00:00Z')
+list_records(from = '2018-05-01T', until = '2018-05-04T')
+
+# Get a list
+list_records(from = '2018-05-01T', until = '2018-05-04T', as = "list")
+
+# Get raw text
+list_records(from = '2018-05-01T', until = '2018-05-04T', as = "raw")
+list_records(from = '2018-05-01T', until = '2018-05-04T', as = "raw")
+
+# Use a resumption token
+# list_records(token =
+#  "1443799900201,2015-09-01T00:00:00Z,2015-10-01T23:59:59Z,50,null,oai_dc")
+} # }
+```
